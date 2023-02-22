@@ -1,0 +1,72 @@
+$main: #262b36;
+$dark: #232832;
+$secondary: #b7afb1;
+$accent: #A692C3;
+
+@font-face {
+    font-family: 'hyperlegible';
+    src: url(/assets/webfonts/Atkinson-Hyperlegible-Regular-102.ttf);
+}
+
+body{
+    font-family: 'hyperlegible';
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    background-color: $dark;
+    color: #f4f4f4;
+}
+
+h1, h2, h3, h4 {
+    font-weight: bold;
+}
+
+a{
+    color: $accent;
+    text-decoration: none;
+}
+a:hover{
+    color: lighten($accent, 10);
+    transition: ease-in 0.3s;
+}
+
+.flex{
+    display: flex;
+}
+
+.nav{
+    display: flex;
+    margin: 0 0 1.5em 0;
+    padding: 1.5em;
+    justify-content: center;
+    list-style-type: none;
+    background-color: $main;
+}
+.nav > li{
+    padding-left: 1.5em;
+}
+
+.main{
+    width: 75%;
+    background-color: $main;
+    margin: auto;
+    padding: 1.5em;
+}
+
+.gallery{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+.item{
+    padding: 1.5em;
+}
+.item > a > img{
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+}
+.item > p{
+    text-align: center;
+}
